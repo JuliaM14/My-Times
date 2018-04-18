@@ -1,7 +1,4 @@
 <!-- Header styling -->
-div {
-  border: 1px solid black;
-}
 header {
   display: flex;
   font-family: verdana;
@@ -41,6 +38,9 @@ a {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  margin-top: 80px;
+  align-content: space-around;
+  justify-content: space-around;
 }
 .narrative {
   font-family: Georgia;
@@ -48,13 +48,11 @@ a {
   color: black;
   margin-top: 16px;
 }
-
-
   .firstcolumn {
      width: 630px;
      display: flex;
      flex-direction: column;
-
+     justify-content: space-between;
   }
   .main.image {
     background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png);
@@ -62,18 +60,40 @@ a {
     height: auto;
     background-size: cover;
     display: flex;
-
   }
   .image-caption {
     font-family: Georgia;
     font-weight: bold;
     font-size: 30px;
     color: white;
+    text-align: center;
+  }
+  .stories {
+    display: flex;
+    flex-wrap: wrap;
+    width: 630px;
+    border: 1px solid black;
+  }
+  .orca {
+    width: 300px;
+  }
+  .burger {
+    width: 300px;
+  }
+  .fall {
+    width: 300px;
+    height: 300px;
+  }
+  .camera {
+    width: 300px;
+    height: 300px;
   }
   .fallpic {
+    display: flex;
     background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png);
   }
   .camerapic {
+    display: flex;
     background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png);
   }
 
@@ -85,8 +105,6 @@ a {
 .catpic {
   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-1.png);
 }
-
-
 .thirdcolumn {
   width: 240px;
   display: flex;
